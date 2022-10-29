@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+				"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+				"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+				
+<hibernate-mapping package="es.florida.AE05_GUI">
+	
+	<class name="Libro" table="libros">
+	
+		<id name="id" column="id">
+			<generator class="increment" />
+		</id>
+		<property name="titulo" type="string" column="titulo" />
+		<property name="autor" type="string" column="autor" />
+		<property name="anyo_nacimiento" type="string" column="anyo_nacimiento" />
+		<property name="anyo_publicacion" type="string" column="anyo_publicacion" />
+		<property name="editorial" type="string" column="editorial" />
+		<property name="num_paginas" type="string" column="num_paginas" />
+		
+	</class>
+	
+</hibernate-mapping>
